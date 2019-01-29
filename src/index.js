@@ -8,7 +8,7 @@ import todoApp from './reducers';
 import * as serviceWorker from './serviceWorker';
 import { loadState, saveState } from './localStorage';
 import {addTodo, setVisibilityFilter, toggleTodo} from './actions';
-import throttle from 'loadash/throttle';
+import throttle from '../node_modules/lodash/throttle';
 
 const mapStateToLinkProps = (state, ownProps) => ({
     active: ownProps.filter === state.visibilityFilter
